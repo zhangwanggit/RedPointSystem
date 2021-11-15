@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <TextView
+        android:id="@+id/tv_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="系统消息："
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_message_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        app:layout_constraintLeft_toRightOf="@id/tv_0"
+        app:layout_constraintTop_toTopOf="@id/tv_0"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/bt_add_system"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="加"
+        app:layout_constraintTop_toTopOf="@id/tv_message_system"
+        app:layout_constraintBottom_toBottomOf="@id/tv_message_system"
+        android:layout_marginStart="250dp" />
+
+    <Button
+        android:id="@+id/bt_reduce_system"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="减"
+        app:layout_constraintTop_toTopOf="@id/tv_message_system"
+        app:layout_constraintBottom_toBottomOf="@id/tv_message_system"
+        android:layout_marginStart="320dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="好友消息："
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_0" />
+
+    <TextView
+        android:id="@+id/tv_message_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        app:layout_constraintLeft_toRightOf="@id/tv_1"
+        app:layout_constraintTop_toTopOf="@id/tv_1"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/bt_add_friend"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="加"
+        app:layout_constraintTop_toTopOf="@id/tv_message_friend"
+        app:layout_constraintBottom_toBottomOf="@id/tv_message_friend"
+        android:layout_marginStart="250dp" />
+
+    <Button
+        android:id="@+id/bt_reduce_friend"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="减"
+        app:layout_constraintTop_toTopOf="@id/tv_message_friend"
+        app:layout_constraintBottom_toBottomOf="@id/tv_message_friend"
+        android:layout_marginStart="320dp"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="好友消息："
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_1" />
+
+    <TextView
+        android:id="@+id/tv_message_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        app:layout_constraintLeft_toRightOf="@id/tv_2"
+        app:layout_constraintTop_toTopOf="@id/tv_2"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/bt_add_other"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="加"
+        app:layout_constraintTop_toTopOf="@id/tv_message_other"
+        app:layout_constraintBottom_toBottomOf="@id/tv_message_other"
+        android:layout_marginStart="250dp" />
+
+    <Button
+        android:id="@+id/bt_reduce_other"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="减"
+        app:layout_constraintTop_toTopOf="@id/tv_message_other"
+        app:layout_constraintBottom_toBottomOf="@id/tv_message_other"
+        android:layout_marginStart="320dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="总消息："
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_message_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        app:layout_constraintLeft_toRightOf="@id/tv_all"
+        app:layout_constraintTop_toTopOf="@id/tv_all"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/bt_clear"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="清除"
+        app:layout_constraintTop_toTopOf="@id/tv_message_all"
+        app:layout_constraintBottom_toBottomOf="@id/tv_message_all"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="250dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
